@@ -3,7 +3,8 @@
 Genetic Algorithm Rubygem, providing an expressive DSL to illustrate genetic algorithm problems and sets of default methods.
 
 ## Example
-``
+
+```ruby
 require 'garb'
 a = GA.new do 
 	population_size 10
@@ -22,4 +23,4 @@ end
 
 a.evolve 100
 print a.best
-``
+```
