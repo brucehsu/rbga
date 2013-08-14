@@ -1,11 +1,11 @@
-# garb
+# rbga
 ## Introduction
 Genetic Algorithm Rubygem, providing an expressive DSL to illustrate genetic algorithm problems and sets of default methods.
 
 ## Example
 
 ```ruby
-require 'garb'
+require 'rbga'
 a = GA.new do 
 	population_size 10
     chromosome_length 100
