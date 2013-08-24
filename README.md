@@ -37,3 +37,18 @@ end
 a.evolve 100
 p a.best, a.best.fitness
 ```
+
+
+## Define your own methods
+
+You can define 5 categoires of customized methods. They are ```ChromosomeType```, ```CrossoverMethods```, ```MutationMethods```, ```SelectionMethods``` and ```SurviveMethods```.
+Here's a quick example of inserting your own methods into ```rbga```.
+
+```ruby
+module MutationMethods
+    def flip
+        idx = rand(self.size)
+        self[idx] = (self[idx]==1) ? 0 : 1
+    end
+end
+```
